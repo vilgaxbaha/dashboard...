@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-6">
+    <nb-card class="inline-form-card">
+      <nb-card-header>Role Management</nb-card-header>
+      <nb-card-body>
+        <form class="form-inline">
+          <input type="text" nbInput full Width placeholder="Role Name">
+          <!-- <input type="text" nbInput fullWidth placeholder="Email">
+          <nb-checkbox>Remember me</nb-checkbox> -->
+          <button type="submit" nbButton status="primary">Create Role </button>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-12 col-lg-6 col-xxxl-6">
+    <nb-card class="list-card">
+      <nb-card-header>Role list</nb-card-header>
+      <nb-card-body>
+        <!-- <nb-list>
+          <nb-list-item *ngFor="let fruit of fruits">
+            {{ fruit }}
+          </nb-list-item>
+        </nb-list> -->
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+</div>
+
+<div class="col-md-6">
+    <nb-card>
+      <nb-card-header>
+        Assign Roles
+      </nb-card-header>
+      <nb-card-body>
+        <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+        </ng2-smart-table>
+      </nb-card-body>
+    </nb-card>
+</div>
+  

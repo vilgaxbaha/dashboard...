@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="col-md-8">
+    <nb-card class="inline-form-card">
+      <nb-card-header>User Registration </nb-card-header>
+      <!-- <nb-card-header>Select the user You need to register </nb-card-header> -->
+      <nb-card-body>
+        <form class="form-inline">
+          <nb-select selected="1">
+            <nb-option value="1">Administrator</nb-option> 
+            <nb-option value="2">financial Funders</nb-option>
+            <nb-option value="2">Input Providers</nb-option>
+            <nb-option value="2">Agreggators</nb-option>
+            <nb-option value="2">Buyers </nb-option>
+          </nb-select>
+          <input type="text" nbInput full Width placeholder="Role Name">
+        
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-7">
+    <nb-card>
+      <nb-card-header>User Information</nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputFirstName" class="label">First Name</label>
+              <input type="text" nbInput fullWidth id="inputFirstName" placeholder="First Name">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputLastName" class="label">Last Name</label>
+              <input type="text" nbInput fullWidth id="inputLastName" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputEmail" class="label">Email</label>
+              <input type="email" nbInput fullWidth id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputWebsite" class="label">Password</label>
+              <input type="text" nbInput fullWidth id="inputpassword" placeholder="password">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputEmail" class="label">Phone Number</label>
+              <input type="text" nbInput fullWidth id="inputPhonenumber" placeholder="+254 Phone ">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputWebsite" class="label">Location</label>
+              <input type="text" nbInput fullWidth id="inputlocation" placeholder="Location">
+            </div>
+          </div>
+        </div>
+        <button type="submit" nbButton>Submit</button>
+      </nb-card-body>
+    </nb-card>
+    </div>
+  </div>
+    
